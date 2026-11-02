@@ -22,7 +22,7 @@ jobs:
           black --check src tests
 
       - name: Unit tests
-        run: pytest tests/ -q
+        run: python -m pytest tests/ -q
 
       - name: Data validation
         run: |
